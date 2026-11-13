@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Интерактивные карточки</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -11,22 +11,27 @@
       <section class="banner">
         <p>Городские истории</p>
         <h1>Наведите курсор и исследуйте</h1>
-        <a class="banner__link" href="#cards">Перейти к карточкам</a>
+        <a class="banner__link" href="#cards">Смотреть маршруты</a>
       </section>
-      <section id="cards" class="cards">
-        <a class="card" href="#"
-          ><span>01</span>
-          <h2>Двор</h2>
-          <p>История тихого двора.</p></a
-        ><a class="card" href="#"
-          ><span>02</span>
-          <h2>Мост</h2>
-          <p>Маршрут через старый мост.</p></a
-        ><a class="card" href="#"
-          ><span>03</span>
-          <h2>Вывеска</h2>
-          <p>Старый неоновый знак.</p></a
-        >
+
+      <section class="cards" id="cards">
+        <article class="card card--featured" tabindex="0">
+          <h2>Выделенный маршрут</h2>
+          <p>Особая карточка, на которую не действуют правила через :not().</p>
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
+
+        <article class="card card--accent" tabindex="0">
+          <h2>Архитектура центра</h2>
+          <p>Прогулка по историческим особнякам и скрытым дворам.</p>
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
+
+        <article class="card card--info" tabindex="0">
+          <h2>Ночные огни</h2>
+          <p>Лучшие смотровые площадки и вечерние набережные города.</p>
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
       </section>
     </main>
   </body>
